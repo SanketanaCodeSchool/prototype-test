@@ -1,7 +1,7 @@
 // LoginPage.js
 import React from "react";
 import { Login, LoginForm } from "react-admin";
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+//import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from "firebase/compat/app";
 import ForgotPasswordButton from './CustomForgotPassword'
 
@@ -29,10 +29,10 @@ const uiConfig = {
   }
 };
 
-const SignInScreen = () => <StyledFirebaseAuth 
-  firebaseAuth={firebase.auth()}
-  uiConfig={uiConfig}
-/>;
+//const SignInScreen = () => <StyledFirebaseAuth 
+// firebaseAuth={firebase.auth()}
+//  uiConfig={uiConfig}
+///>;
 
 const CustomLoginForm = props => (
   <div>
@@ -42,7 +42,6 @@ const CustomLoginForm = props => (
       <p>Password: password</p>
     </div>
     <LoginForm {...props} />
-    <SignInScreen />
     <ForgotPasswordButton {...props} />
   </div>
 );
